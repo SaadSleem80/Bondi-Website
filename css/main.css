@@ -1,0 +1,245 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ff941b;
+    --section-color:#eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* overlay */
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #00000045;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+/* overlay */
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler{
+    color: white;
+    border: 2px solid white;
+    
+}
+.navbar #main li .active,
+.navbar #main li a:hover,
+.navbar #main li a:focus{
+    color: var(--green-color);
+}
+
+.navbar #main li a{
+    color: white;
+}
+.navbar .search{
+    border-left:2px solid var(--green-color) ;
+}
+.navbar .search svg{
+    color: var(--green-color);
+    cursor: pointer;
+}
+a.nav-btn:hover,
+a.nav-btn:focus{
+    background-color: var(--green-color);
+}
+
+a.nav-btn{
+    border: none;
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(500px - 88px);
+}
+/* end landing */
+/* start heading */
+.main-heading p::after{
+    content: "";
+position: absolute;
+left: 50%;
+bottom: 50px;
+transform: translateX(-50%);
+width: 130px;
+height: 2px;
+background-color: var(--green-color);
+
+}
+/* end heading */
+/* start featurs */
+.featurs .feat{
+    height: 200px;
+}
+.featurs .feat .icon-holder{
+height: 200px;
+}
+.featurs .feat svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.featurs .feat .number{
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.featurs .feat .icon{
+color: var(--green-color);
+font-size: 4rem;
+}
+.featurs .feat h2{
+    color: var(--yellow-color);
+}
+.featurs .row .skill{
+    min-height: 365px;
+}
+/* end featurs */
+/* start img section */
+.img{
+    background-color: var(--section-color);
+}
+.img ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.img ul .active:hover{
+background-color: var(--green-color);
+color: white;
+}
+.img ul li{
+    cursor: pointer;
+}
+.img ul:not(.active) li:hover{
+    color: var(--red-color);
+}
+.img .row img{
+    background-color: white;
+    cursor: pointer;
+}
+
+.img .row .box{
+    overflow: hidden;
+    padding: 5px;
+}
+.img-div{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.img-div img{
+    width: 500px;
+    height: 300px;
+}
+.img-div span{
+    cursor: pointer;
+}
+.close{
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    right: -19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    background: var(--green-color);
+    color: white;
+    font-size: 20px;
+}
+/* .img .row .box::before{
+    content: attr(data-img);
+    position: absolute;
+    width: calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color: #33d1cc6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transform: translateX(calc(-100% - 5px));
+}
+.img .row .box:hover::before{
+    transform: translateX(0);
+    cursor: pointer;
+} */
+/* end img section */
+/* start stuff */
+.stuff .description{
+    max-width: 500px;
+    margin:auto;
+}
+/* end stuff */
+/* start meet */
+.meet{
+    background-color: var(--section-color);
+}
+.meet .main-heading h2{
+    color: var(--yellow-color);
+}
+.meet .box{
+    height: 338.81px;
+}
+.meet .row h4{
+    background-color: var(--green-color);
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+/* end meet */
+/* start sub */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe .row input::placeholder{
+    color: white;
+}
+.subscribe .row input{
+    max-width: 400px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+.subscribe .row a:hover{
+background-color: var(--green-color);
+color: white;
+}
+.subscribe .row a{
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+}
+/* end sub */
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+    color: white;
+}
+.footer img{
+    width: 100px;
+
+}
+.footer ul li{
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color: var(--green-color);
+}
+/* end footer */
